@@ -218,7 +218,7 @@ input::placeholder {
                 loadingMessage.style.display='block';
                 errorMessage.style.display='none';
                 const response = await fetch(
-                    `http://api.weatherapi.com/v1/current.json?key=bbf147e1d69344f8b0375335240912&q= ${city}&aqi=no`
+                    `https://api.weatherapi.com/v1/current.json?key=bbf147e1d69344f8b0375335240912&q= ${city}&aqi=no`
             );
              if(!response.ok){
                 throw new Error('Failed to fetch weather data');
